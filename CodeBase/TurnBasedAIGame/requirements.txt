@@ -1,0 +1,14 @@
+1) There will a board game  , where 2 or more players play by turns
+2) player can be real player or AI (computer player)
+3) save game in a file(or DB) , load game if game crashed 
+4) when certain conditions met (related based on game) , show who won or draw
+5) maintain user analytics ( how many games he won ,participated etc)
+
+
+
+Actors - Player { User or AI)
+
+Entities - Board , Player
+
+
+Games List: Tick tac toe , Chain reaction ,Chess ,snack or ladders
