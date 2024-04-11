@@ -1,0 +1,54 @@
+Requirements :
+
+1) User able to place an order with food items and order strategy
+2) On board new restaurent with menu 
+3) restaurents can add items to menu
+4) user orders can pick restaurents based on order strategy
+5) restaurent has max number of orders
+6) if order is accepeted by restaurent it can be completed then we can have another order .
+
+
+Actors - Admin and User
+
+Entities - Order , OrderStrategy ,Restaurent ,Menu ,FoodItem ,OrderItem
+
+Services - RestaurentService , OrderService
+
+
+<<Restaurent>>
+id
+name
+orders[]
+max_orders
+menu
+
+<<Menu>>
+FoodItem[]
+
+<<FoodItem>>
+name
+price
+
+<<Order>>
+id 
+user
+orderItem[]
+status
+restaurent
+total_amount
+
+<<OrderItem>>
+name
+quantity
+
+<<RestaurentService>>
+Restaurent[]
++addRestaurent()
++addMenu()
++updateMenu()
+
+<<OrderService>>
+Order[]
++placeOrder()
++updateStatus()
+

@@ -1,8 +1,12 @@
 package CodeBase.TurnBasedAIGame.Game;
 
 public class GameResult {
-    private final int winnerId;
-    public GameResult(int winnerId) {
-        this.winnerId = winnerId;
+    private final String name;
+    public GameResult(String name) {
+        this.name = name;
+    }
+    public void printWinnername()
+    {
+        System.out.println(name+" has won");
     }
 }
